@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container">
+    <div class="header-text">
+        <div>
+            <p class="header-title">What is your median lame ? </p>
+            <p class="header-subtitle">Average GAME</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="icon-section">
+            <div class="circle">
+                <p>?</p>
+            </div>
+        </div>
+        <div class="QA-section">
+            <div class="questions">
+                <div class="questions-title">
+                  <p>Question Nr <span id="questionNumber">2:</span></p>
+                  <div id="timer">
+                    <svg id="countdown" viewBox="0 0 36 36" class="circular-timer">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="circle" class="circle"
+                              stroke-dasharray="100, 100"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    </svg>
+                    <div id="timeText">15</div>
+                </div>
+                  <div class="space"></div>
+                </div>
+                <div class="question-card">
+                    <div class="icon-right"></div>
+                    <p id="questions-text">How many spikes does porcupine have ?</p>
+                    <div class="icon-left"></div>
+                </div>
+            </div>
+            <div class="answers">
+                <p class="answer-title">Choose the correct answer:</p>
+                <div class="multiple-choice">
+                      <div class="choose">
+                        <p class="choice-text" data-number="1">8000</p>
+                      </div>
+                      <div class="choose" data-number="2">
+                        <p class="choice-text" data-number="2">20,000</p>
+                      </div>
+                      <div class="choose" data-number="3">
+                        <p class="choice-text" data-number="3">40,000</p>
+                      </div>
+                      <div class="choose" data-number="4">
+                        <p class="choice-text" data-number="4">900</p>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="icon-section">
+            <div class="circle">
+                <p>?</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <p class="footer-text">Your lame Level: <span id="progressText"></span></p>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
+        </div>
+  </div>
+ </div>   
+<script src="quiz_app.js"></script>
+</body>
+</html>
