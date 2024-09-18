@@ -211,27 +211,6 @@ button:hover {
     background-color: #ccc;
 }
 
-/* Correct Answer Green */
-.correct {
-    background-color: #4caf50;
-    color: white;
-}
-
-/* User Incorrect Answer Red */
-.incorrect {
-    background-color: #f44336;
-    color: white;
-}
-
-.correct-answer {
-    background-color: #d4edda;
-    color: green;
-}
-
-.incorrect-answer {
-    background-color: #f8d7da;
-    color: red;
-}
 @media (min-width: 350px) and (max-width: 648px) {
     .main {
         display: flex;
